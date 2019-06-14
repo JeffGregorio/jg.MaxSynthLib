@@ -27,7 +27,7 @@ Some of the abstractions contained within are based on custom externals, which c
 * `jg.poly.mod1`: Polyphonic variant of mono.mod1
 
 #### Voices
-Each synth uses a `poly~` instance to manage instances of a corresponding voice. Abstractions beginning with `jg.pvoice` are wrappers around corresponding jg.voice abstractions, designed to be used with `poly~`.
+Each synth uses a `poly~` instance to manage instances of a corresponding voice. Abstractions beginning with `jg.pvoice` are wrappers around corresponding `jg.voice` abstractions, designed to be used with `poly~`.
 
 
 ### Util
