@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,18 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 184.4549560546875, 542.0, 283.0, 33.0 ],
-					"text" : "Monophonic subtractive synth using a modulator 1, a tri/ramp LFO with two shape parameters"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
@@ -421,9 +409,9 @@
 				"box" : 				{
 					"id" : "obj-161",
 					"maxclass" : "newobj",
-					"numinlets" : 29,
-					"numoutlets" : 12,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "bang", "bang", "bang" ],
+					"numinlets" : 28,
+					"numoutlets" : 9,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 34.55010986328125, 489.0, 809.54058837890625, 22.0 ],
 					"text" : "jg.voice.mod1~"
 				}
@@ -1249,13 +1237,13 @@
 					"patching_rect" : [ 34.55010986328125, 534.5, 46.0, 100.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_mmin" : -70.0
 						}
 
 					}
@@ -1550,7 +1538,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 14 ],
-					"midpoints" : [ 404.9549560546875, 228.0, 279.0, 228.0, 279.0, 240.0, 111.0, 240.0, 111.0, 474.0, 439.320404052734375, 474.0 ],
+					"midpoints" : [ 404.9549560546875, 228.0, 279.0, 228.0, 279.0, 240.0, 111.0, 240.0, 111.0, 474.0, 453.960044578269674, 474.0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -1572,7 +1560,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 9 ],
-					"midpoints" : [ 353.954925537109375, 228.0, 279.0, 228.0, 279.0, 240.0, 111.0, 240.0, 111.0, 474.0, 298.15244184221541, 474.0 ],
+					"midpoints" : [ 353.954925537109375, 228.0, 279.0, 228.0, 279.0, 240.0, 111.0, 240.0, 111.0, 474.0, 307.563639322916686, 474.0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1610,7 +1598,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 7 ],
-					"midpoints" : [ 302.954925537109375, 228.0, 267.0, 228.0, 267.0, 240.0, 111.0, 240.0, 111.0, 474.0, 241.685256958007812, 474.0 ],
+					"midpoints" : [ 302.954925537109375, 228.0, 267.0, 228.0, 267.0, 240.0, 111.0, 240.0, 111.0, 474.0, 249.005077220775462, 474.0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -1618,7 +1606,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
-					"midpoints" : [ 403.386740944602252, 522.0, 924.0, 522.0, 924.0, 384.0, 998.219970703125, 384.0 ],
+					"midpoints" : [ 538.137977600097656, 522.0, 924.0, 522.0, 924.0, 384.0, 998.219970703125, 384.0 ],
 					"source" : [ "obj-161", 5 ]
 				}
 
@@ -1626,7 +1614,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
-					"midpoints" : [ 618.988719593394876, 513.0, 924.0, 513.0, 924.0, 150.0, 998.219970703125, 150.0 ],
+					"midpoints" : [ 834.5906982421875, 513.0, 924.0, 513.0, 924.0, 150.0, 998.219970703125, 150.0 ],
 					"source" : [ "obj-161", 8 ]
 				}
 
@@ -1634,7 +1622,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 547.121393377130744, 522.0, 924.0, 522.0, 924.0, 33.0, 998.219970703125, 33.0 ],
+					"midpoints" : [ 735.773124694824219, 522.0, 924.0, 522.0, 924.0, 33.0, 998.219970703125, 33.0 ],
 					"source" : [ "obj-161", 7 ]
 				}
 
@@ -1658,7 +1646,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-83", 0 ],
-					"midpoints" : [ 259.652088512073874, 522.0, 924.0, 522.0, 924.0, 267.0, 998.219970703125, 267.0 ],
+					"midpoints" : [ 340.502830505371094, 522.0, 924.0, 522.0, 924.0, 267.0, 998.219970703125, 267.0 ],
 					"source" : [ "obj-161", 3 ]
 				}
 
@@ -1675,7 +1663,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 13 ],
-					"midpoints" : [ 724.883544921875, 339.0, 699.0, 339.0, 699.0, 474.0, 411.086811610630605, 474.0 ],
+					"midpoints" : [ 724.883544921875, 339.0, 699.0, 339.0, 699.0, 474.0, 424.680763527199076, 474.0 ],
 					"source" : [ "obj-181", 0 ]
 				}
 
@@ -1690,7 +1678,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 19 ],
-					"midpoints" : [ 186.723236083984375, 228.0, 111.0, 228.0, 111.0, 474.0, 580.488366263253397, 474.0 ],
+					"midpoints" : [ 186.723236083984375, 228.0, 111.0, 228.0, 111.0, 474.0, 600.356449833622719, 474.0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -1698,7 +1686,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 18 ],
-					"midpoints" : [ 134.723236083984375, 228.0, 111.0, 228.0, 111.0, 474.0, 552.25477382114957, 474.0 ],
+					"midpoints" : [ 134.723236083984375, 228.0, 111.0, 228.0, 111.0, 474.0, 571.077168782552121, 474.0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -1771,7 +1759,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 25 ],
-					"midpoints" : [ 725.162109375, 228.0, 855.0, 228.0, 855.0, 474.0, 749.889920915876132, 474.0 ],
+					"midpoints" : [ 725.162109375, 228.0, 855.0, 228.0, 855.0, 474.0, 776.032136140046305, 474.0 ],
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -1786,7 +1774,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 2 ],
-					"midpoints" : [ 305.312103271484375, 474.0, 100.517294747488847, 474.0 ],
+					"midpoints" : [ 305.312103271484375, 474.0, 102.608671965422445, 474.0 ],
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -1794,7 +1782,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 4 ],
-					"midpoints" : [ 422.4549560546875, 474.0, 156.984479631696445, 474.0 ],
+					"midpoints" : [ 422.4549560546875, 474.0, 161.167234067563641, 474.0 ],
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -1802,7 +1790,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 27 ],
-					"midpoints" : [ 777.162109375, 231.0, 855.0, 231.0, 855.0, 474.0, 806.357105800083673, 474.0 ],
+					"midpoints" : [ 777.162109375, 231.0, 855.0, 231.0, 855.0, 474.0, 834.5906982421875, 474.0 ],
 					"source" : [ "obj-53", 0 ]
 				}
 
@@ -1810,7 +1798,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 26 ],
-					"midpoints" : [ 777.162109375, 156.0, 855.0, 156.0, 855.0, 474.0, 778.123513357979959, 474.0 ],
+					"midpoints" : [ 777.162109375, 156.0, 855.0, 156.0, 855.0, 474.0, 805.311417191116902, 474.0 ],
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -1818,7 +1806,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 23 ],
-					"midpoints" : [ 622.4654541015625, 228.0, 855.0, 228.0, 855.0, 474.0, 693.422736031668478, 474.0 ],
+					"midpoints" : [ 622.4654541015625, 228.0, 855.0, 228.0, 855.0, 474.0, 717.473574037905109, 474.0 ],
 					"source" : [ "obj-56", 0 ]
 				}
 
@@ -1826,7 +1814,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 20 ],
-					"midpoints" : [ 236.723236083984375, 228.0, 111.0, 228.0, 111.0, 474.0, 608.72195870535711, 474.0 ],
+					"midpoints" : [ 236.723236083984375, 228.0, 111.0, 228.0, 111.0, 474.0, 629.635730884693317, 474.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1834,7 +1822,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 6 ],
-					"midpoints" : [ 523.16424560546875, 474.0, 213.451664515904014, 474.0 ],
+					"midpoints" : [ 523.16424560546875, 474.0, 219.725796169704864, 474.0 ],
 					"source" : [ "obj-61", 0 ]
 				}
 
@@ -1842,7 +1830,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 3 ],
-					"midpoints" : [ 371.454925537109375, 474.0, 128.750887189592618, 474.0 ],
+					"midpoints" : [ 371.454925537109375, 474.0, 131.887953016493043, 474.0 ],
 					"source" : [ "obj-67", 0 ]
 				}
 
@@ -1850,7 +1838,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 22 ],
-					"midpoints" : [ 572.4549560546875, 228.0, 855.0, 228.0, 855.0, 474.0, 665.189143589564765, 474.0 ],
+					"midpoints" : [ 572.4549560546875, 228.0, 855.0, 228.0, 855.0, 474.0, 688.194292986834512, 474.0 ],
 					"source" : [ "obj-68", 0 ]
 				}
 
@@ -1858,7 +1846,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 5 ],
-					"midpoints" : [ 474.4549560546875, 474.0, 185.218072073800215, 474.0 ],
+					"midpoints" : [ 474.4549560546875, 474.0, 190.446515118634267, 474.0 ],
 					"source" : [ "obj-69", 0 ]
 				}
 
@@ -1866,7 +1854,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 16 ],
-					"midpoints" : [ 456.9549560546875, 228.0, 279.0, 228.0, 279.0, 240.0, 111.0, 240.0, 111.0, 474.0, 495.787588936941972, 474.0 ],
+					"midpoints" : [ 456.9549560546875, 228.0, 279.0, 228.0, 279.0, 240.0, 111.0, 240.0, 111.0, 474.0, 512.518606680410812, 474.0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -1874,7 +1862,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 21 ],
-					"midpoints" : [ 519.4549560546875, 228.0, 855.0, 228.0, 855.0, 474.0, 636.955551147460938, 474.0 ],
+					"midpoints" : [ 519.4549560546875, 228.0, 855.0, 228.0, 855.0, 474.0, 658.915011935763914, 474.0 ],
 					"source" : [ "obj-71", 0 ]
 				}
 
@@ -1882,7 +1870,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 24 ],
-					"midpoints" : [ 673.813720703125, 228.0, 855.0, 228.0, 855.0, 474.0, 721.656328473772305, 474.0 ],
+					"midpoints" : [ 673.813720703125, 228.0, 855.0, 228.0, 855.0, 474.0, 746.752855088975707, 474.0 ],
 					"source" : [ "obj-73", 0 ]
 				}
 
@@ -1890,7 +1878,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 17 ],
-					"midpoints" : [ 813.883544921875, 474.0, 524.021181379045743, 474.0 ],
+					"midpoints" : [ 813.883544921875, 474.0, 541.797887731481524, 474.0 ],
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -1912,7 +1900,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 12 ],
-					"midpoints" : [ 724.883544921875, 474.0, 382.853219168526778, 474.0 ],
+					"midpoints" : [ 724.883544921875, 474.0, 395.401482476128479, 474.0 ],
 					"source" : [ "obj-90", 0 ]
 				}
 
@@ -1920,7 +1908,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 10 ],
-					"midpoints" : [ 627.0977783203125, 474.0, 326.38603428431918, 474.0 ],
+					"midpoints" : [ 627.0977783203125, 474.0, 336.842920373987283, 474.0 ],
 					"source" : [ "obj-92", 0 ]
 				}
 
@@ -1928,7 +1916,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-161", 11 ],
-					"midpoints" : [ 679.0977783203125, 474.0, 354.619626726423007, 474.0 ],
+					"midpoints" : [ 679.0977783203125, 474.0, 366.122201425057881, 474.0 ],
 					"source" : [ "obj-94", 0 ]
 				}
 
@@ -1944,84 +1932,84 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "jg.voice.mod1~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/synths/voices",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/synths/voices",
 				"patcherrelativepath" : "./voices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.voice.mod0~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/synths/voices",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/synths/voices",
 				"patcherrelativepath" : "./voices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.dco~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.dcsvf~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mtoa.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mix~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jg.line~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"name" : "jg.ramp~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.adsrlfo~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.egenlfo.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mtof.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.adsrs~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.notem.js",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "TEXT",
 				"implicit" : 1

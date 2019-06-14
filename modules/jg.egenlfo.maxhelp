@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -166,13 +166,13 @@
 					"patching_rect" : [ 40.5, 381.0, 48.0, 100.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_mmin" : -70.0
 						}
 
 					}
@@ -237,7 +237,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 26.71429443359375, 50.0, 227.0, 60.0 ],
-					"text" : "Front end for converting rate and duty cycle to attack and decay times"
+					"text" : "Front end for converting rate and duty cycle to attack and decay times for"
 				}
 
 			}
@@ -700,14 +700,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "jg.egenlfo.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mtof.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1

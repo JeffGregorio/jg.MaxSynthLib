@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1566.0, -153.0, 1300.0, 689.0 ],
+		"rect" : [ -1566.0, -271.0, 1300.0, 689.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,18 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 179.4549560546875, 578.5, 283.0, 33.0 ],
-					"text" : "Monophonic subtractive synth using a modulator 2, a sinusoidal LFO with selectable harmonic"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
@@ -442,8 +430,8 @@
 					"id" : "obj-161",
 					"maxclass" : "newobj",
 					"numinlets" : 27,
-					"numoutlets" : 10,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "bang" ],
+					"numoutlets" : 9,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 24.757537841796875, 506.0, 621.89923095703125, 22.0 ],
 					"text" : "jg.voice.mod2~"
 				}
@@ -1352,13 +1340,13 @@
 					"patching_rect" : [ 24.757537841796875, 545.0, 46.0, 100.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_mmin" : -70.0
 						}
 
 					}
@@ -1606,7 +1594,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
-					"midpoints" : [ 369.201555040147582, 540.0, 849.0, 540.0, 849.0, 396.0, 952.219970703125, 396.0 ],
+					"midpoints" : [ 411.069557189941406, 540.0, 849.0, 540.0, 849.0, 396.0, 952.219970703125, 396.0 ],
 					"source" : [ "obj-161", 5 ]
 				}
 
@@ -1614,7 +1602,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
-					"midpoints" : [ 570.167965359157961, 540.0, 849.0, 540.0, 849.0, 162.0, 952.219970703125, 162.0 ],
+					"midpoints" : [ 637.156768798828125, 540.0, 849.0, 540.0, 849.0, 162.0, 952.219970703125, 162.0 ],
 					"source" : [ "obj-161", 8 ]
 				}
 
@@ -1622,7 +1610,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 503.179161919487854, 540.0, 849.0, 540.0, 849.0, 45.0, 952.219970703125, 45.0 ],
+					"midpoints" : [ 561.794364929199219, 540.0, 849.0, 540.0, 849.0, 45.0, 952.219970703125, 45.0 ],
 					"source" : [ "obj-161", 7 ]
 				}
 
@@ -1646,7 +1634,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-83", 0 ],
-					"midpoints" : [ 235.223948160807282, 540.0, 849.0, 540.0, 849.0, 279.0, 952.219970703125, 279.0 ],
+					"midpoints" : [ 260.344749450683594, 540.0, 849.0, 540.0, 849.0, 279.0, 952.219970703125, 279.0 ],
 					"source" : [ "obj-161", 3 ]
 				}
 
@@ -1901,77 +1889,77 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "jg.voice.mod2~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/synths/voices",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/synths/voices",
 				"patcherrelativepath" : "./voices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.voice.mod0~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/synths/voices",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/synths/voices",
 				"patcherrelativepath" : "./voices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.dco~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.dcsvf~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mtoa.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mix~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jg.line~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"name" : "jg.ramp~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.hlfo~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mtof.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.adsrs~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.notem.js",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "TEXT",
 				"implicit" : 1

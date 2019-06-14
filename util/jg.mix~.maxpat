@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -164,8 +164,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 127.0, 244.0, 47.0, 22.0 ],
-					"text" : "jg.line~"
+					"patching_rect" : [ 127.0, 244.0, 56.0, 22.0 ],
+					"text" : "jg.ramp~"
 				}
 
 			}
@@ -185,7 +185,7 @@
 				"box" : 				{
 					"comment" : "(signal) Wet/Dry Mix",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -197,7 +197,7 @@
 				"box" : 				{
 					"comment" : "(int/float) Mix [0-127]",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -210,11 +210,11 @@
 				"box" : 				{
 					"comment" : "(signal) Wet~",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 81.0, 23.0, 30.0, 30.0 ]
 				}
 
@@ -223,11 +223,11 @@
 				"box" : 				{
 					"comment" : "(signal) Dry~",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 35.0, 23.0, 30.0, 30.0 ]
 				}
 
@@ -375,23 +375,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "jg.mtoa.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "jg.line~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

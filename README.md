@@ -41,3 +41,4 @@ jg.mtof~: Signal equivalent of jg.mtof
 jg.notem: MIDI note allocator for monophonic synths
 jg.relpath: Converts a relative path to absolute path (Mac OS X only)
 jg.util.js: Utility functions for javascript files used in jg.MaxSynthLib
+

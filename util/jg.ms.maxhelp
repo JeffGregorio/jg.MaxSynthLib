@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -865.0, -111.0, 496.0, 480.0 ],
+		"rect" : [ -766.0, -271.0, 484.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,23 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 145.0, 526.0, 75.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "mr",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js mr lfo/rate"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "toggle",
@@ -417,7 +434,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jg.ms.js",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util/multisym",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

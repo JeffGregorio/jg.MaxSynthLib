@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1566.0, -153.0, 1267.0, 787.0 ],
+		"rect" : [ -1566.0, -271.0, 1267.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -122,7 +122,7 @@
 			}
 , 			{
 				"box" : 				{
-					"embedstate" : [ [ "separator", "" ], [ "prefix", "" ] ],
+					"embedstate" : [ [ "prefix", "" ], [ "separator", "" ] ],
 					"id" : "obj-49",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -168,8 +168,8 @@
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 7,
-					"outlettype" : [ "signal", "signal", "", "", "", "", "" ],
+					"numoutlets" : 6,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "", "" ],
 					"patching_rect" : [ 922.8466796875, 306.882080078125, 189.0, 22.0 ],
 					"text" : "poly~ jg.pvoice.mod1~ 6 @steal 1"
 				}
@@ -1116,13 +1116,13 @@
 					"patching_rect" : [ 846.41796875, 178.882080078125, 46.0, 100.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.gain~",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "live.gain~",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1417,7 +1417,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"source" : [ "obj-27", 1 ]
+					"source" : [ "obj-27", 2 ]
 				}
 
 			}
@@ -1637,92 +1637,92 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "jg.pvoice.mod1~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/synths/voices",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/synths/voices",
 				"patcherrelativepath" : "./voices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.voice.mod1~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/synths/voices",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/synths/voices",
 				"patcherrelativepath" : "./voices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.voice.mod0~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/synths/voices",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/synths/voices",
 				"patcherrelativepath" : "./voices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.dco~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.dcsvf~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mtoa.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mix~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jg.line~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"name" : "jg.ramp~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.adsrlfo~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.egenlfo.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.mtof.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/util",
 				"patcherrelativepath" : "../util",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.adsrs~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/modules",
+				"bootpath" : "~/Documents/Max 8/Library/jg/synth/modules",
 				"patcherrelativepath" : "../modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jg.ms.js",
-				"bootpath" : "~/Documents/Max 8/Library/jg.MaxSynthLib-master/util",
-				"patcherrelativepath" : "../util",
+				"bootpath" : "~/Documents/Max 8/Library/jg/multisym",
+				"patcherrelativepath" : "../../multisym",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
